@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: snow;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+.cards{
+ padding: 40px;
+ align-items: center;
+ text-align: center;
+ padding: 1rem 1.5rem;
+ max-height: 260px;
+ 
+}
+.card:first-child{
+    margin-left: 0;
+}
+.card img{
+    margin-top: 40px;
+    width: 64px;
+    height: 60px;
+}
+.card{
+    display:inline-block;
+    width: 31%;
+    height: 250px;
+    background-color: white;
+    border-radius: 25px; 
+    margin-left: 30px;  ; 
+}
+.card button{
+    padding: 0.5rem 1rem ;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: white;
+    margin-top:20px;
+}
+.card.contact button{
+    background: linear-gradient(to right, #9f66ff,#dfcbff);
+}
+.card.shop button{
+    background: linear-gradient(to right, #3e8aff,#bbdeff);
+}
+.card.about button{
+    background: linear-gradient(to right, #fe5f8f,#ffc7d9);
+}
+.card.shop{
+    box-shadow: 20px 20px 50px -30px  #3e8aff;
+
+}
+.card.about{
+    box-shadow: 20px 20px 50px -30px #fe5f8f;
+}
+
+main.cards div.card.contact{
+    box-shadow: 20px 20px 50px -30px #9f66ff;  
+}
+.card h3, .card span{
+
+    font-size :18px;
+    margin-top: 5px;
+}
+.card span{
+    font-weight: 300;
+}
+@media screen and (max-width: 1025px){
+    main.cards{
+        flex-direction: column;
+    }
+}
