@@ -9,17 +9,14 @@ body{
     height: 100vh;
     width: 100%;
     align-items: center;
-
     display: flex;
     justify-content: center;
     color: black;
 }
 .cards{
- padding: 40px;
- align-items: center;
+ display: flex;
  text-align: center;
- padding: 1rem 1.5rem;
- max-height: 260px;
+ padding: 32px;
  
 }
 .card:first-child{
@@ -32,11 +29,26 @@ body{
 }
 .card{
     display:inline-block;
-    width: 31%;
-    height: 250px;
+    width: 30%;
+    align-items: center;
+    text-align: center;
     background-color: white;
     border-radius: 25px; 
-    margin-left: 30px;  ; 
+    padding: 0.5em 1.5em;
+    max-height:  480px;
+    margin-left: 35px;  
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+    max-height:  480px;
+    margin-left: 35px;
 }
 .card button{
     padding: 0.5rem 1rem ;
@@ -78,7 +90,37 @@ main.cards div.card.contact{
     font-weight: 300;
 }
 @media screen and (max-width: 1025px){
-    main.cards{
+
+    .card span{
+        font-size: 11pt;
+    }
+}
+@media screen and (max-width: 760px){
+    .cards{
         flex-direction: column;
+    }
+    /*.card{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-left: 0;
+        margin-bottom: 35px;
+
+    }*/
+    .card{
+        display: flex;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 35px;
+
+    }
+    .card:last-child{
+        margin-bottom: 0;
+
+    }
+    .div.card.contact{
+        width: 100px;
+
+
     }
 }
